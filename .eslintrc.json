@@ -1,13 +1,3 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"],
-  "rules": {
-    "react-hooks/exhaustive-deps": "off",
-    "@typescript-eslint/no-unused-vars": "off",
-    "prefer-const": "off",
-    "no-var": "off",
-    "@next/next/no-img-element": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "react/no-unescaped-entities": "off",
-    "react/jsx-props-no-spreading": "off"
-  }
+  "extends": ["next/core-web-vitals", "next/typescript"]
 }
