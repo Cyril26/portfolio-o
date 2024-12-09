@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Achievements", link: "#achievements" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -104,69 +104,45 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
+export const achievements = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 1,
+    description:
+      "Successfully completed the ALX Africa software engineering course, gaining comprehensive skills in modern software development practices and technologies.",
+    date: "October 2024",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 2,
+    description:
+      "Developed an algorithm visualizer application showcasing pathfinding and sorting algorithms, demonstrating strong problem-solving and React development skills.",
+    date: "September 2022",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 3,
+    description:
+      "Implemented a USSD platform feature to integrate OTP functionality and provide balance inquiries, utilizing .NET and Redis caching effectively.",
+    date: "September 2024",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 4,
+    description:
+      "Designed and deployed a booking application for Complete Vision using React.js, with a seamless user experience and Vercel integration.",
+    date: "November 2024",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "Petra",
+    img: "/pl.png",
+    nameImg: "/pl.png",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "Complete Vision",
+    img: "/logo.png",
+    nameImg: "/logo.png",
   },
 ];
 
@@ -174,14 +150,14 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Developer",
-    desc: "Assisted in the development and management of a web-based platform using React.js, Typescript and Ruby on Rails, enhancing interactivity.",
+    desc: "Assisted in the development and management of a web-based platform using React.js, Typescript and Ruby on Rails, enhancing interactivity for 2+ years.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Freelance Graphic Designer",
-    desc: "Designed flyers, cover arts, certificates, etc with photoshop.",
+    desc: "Designed flyers, cover arts, certificates, etc with photoshop for 5+ years.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },

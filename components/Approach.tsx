@@ -7,15 +7,14 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-purple">Resume and Certificates</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title="My Resume"
+          icon={<AceternityIcon order="CV" />}
+          des="Click to view my detailed resume outlining my professional journey."
+          link="cv.pdf"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -23,11 +22,10 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title="ALX Software Engineering Certificate"
+          icon={<AceternityIcon order="Certificate" />}
+          des="Click to view my certificate of completion for the ALX Software Engineering course."
+          link="cert.png"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -37,19 +35,6 @@ const Approach = () => {
               [221, 255, 247],
             ]}
             dotSize={2}
-          />
-        </Card>
-        <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
-            colors={[[125, 211, 252]]}
           />
         </Card>
       </div>
@@ -64,15 +49,20 @@ const Card = ({
   icon,
   children,
   des,
+  link,
 }: {
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
   des: string;
+  link: string; // New prop for the link
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
-    <div
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
@@ -123,9 +113,10 @@ const Card = ({
           {des}
         </p>
       </div>
-    </div>
+    </a>
   );
 };
+
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>

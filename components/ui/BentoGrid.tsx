@@ -8,7 +8,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+// const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export const BentoGrid = ({
   className,
@@ -148,7 +148,7 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
+                {/* <Lottie
                   options={{
                     loop: copied,
                     autoplay: copied,
@@ -157,7 +157,7 @@ export const BentoGridItem = ({
                       preserveAspectRatio: "xMidyMid slice",
                     },
                   }}
-                />
+                /> */}
               </div>
               <MagicButton
                 title={copied ? "Email Copied!" : "Copy my email address"}
